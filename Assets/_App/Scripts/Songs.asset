@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f886a5064afa5458155f37209c608c, type: 3}
+  m_Name: Songs
+  m_EditorClassIdentifier: 
+  songInfors:
+  - songID: 3
+    name: Guitar
+    price: 100
+    songs:
+    - {fileID: 8300000, guid: 652408dd8e070de4b9b57325fc0deeb4, type: 3}
+    - {fileID: 8300000, guid: 652408dd8e070de4b9b57325fc0deeb4, type: 3}
+    musicalObject: {fileID: 5929956069095156526, guid: bcfdf9082c2540844ac0fc07c3ac2ac8, type: 3}
+  - songID: 1
+    name: Electric Guitar
+    price: 300
+    songs:
+    - {fileID: 8300000, guid: e21088054a3357547ac66f492534ca97, type: 3}
+    - {fileID: 8300000, guid: e21088054a3357547ac66f492534ca97, type: 3}
+    musicalObject: {fileID: 7759331669838892143, guid: c3eda8ebc7d53cf4fa461e682e81fc45, type: 3}
+  - songID: 2
+    name: Drum
+    price: 400
+    songs:
+    - {fileID: 8300000, guid: ba2d088d2c9e8254f8cba7cfa4a2cccc, type: 3}
+    - {fileID: 8300000, guid: ba2d088d2c9e8254f8cba7cfa4a2cccc, type: 3}
+    musicalObject: {fileID: 545401288232640304, guid: c234700699d39f249b19f431c4b0bc6d, type: 3}
+  - songID: 4
+    name: Violin
+    price: 700
+    songs:
+    - {fileID: 8300000, guid: f11ee185f8e17f44095a442415dac8a7, type: 3}
+    - {fileID: 8300000, guid: f11ee185f8e17f44095a442415dac8a7, type: 3}
+    musicalObject: {fileID: 6951450630367122876, guid: c97e17a4ccbf12049b328be3f28c0d4b, type: 3}
+  - songID: 5
+    name: Trumpet
+    price: 500
+    songs:
+    - {fileID: 8300000, guid: b426a5b9d65225c4ca2940f2eb164593, type: 3}
+    - {fileID: 8300000, guid: b426a5b9d65225c4ca2940f2eb164593, type: 3}
+    musicalObject: {fileID: 6736421486673244124, guid: 49912e74c738d6149bfead38404b8280, type: 3}
+  - songID: 0
+    name: Piano
+    price: 250
+    songs:
+    - {fileID: 8300000, guid: 5ef2d7ce2194e594a80cd1aef5d09a10, type: 3}
+    - {fileID: 8300000, guid: 5ef2d7ce2194e594a80cd1aef5d09a10, type: 3}
+    - {fileID: 8300000, guid: 5ef2d7ce2194e594a80cd1aef5d09a10, type: 3}
+    musicalObject: {fileID: 3294818734005192114, guid: 600ad5a8c4aeed848a12caf488e643e3, type: 3}
