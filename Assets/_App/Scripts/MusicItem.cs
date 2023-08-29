@@ -1,5 +1,4 @@
 using Jackal;
-using UnityEngine.Purchasing;
 using UnityEngine.SceneManagement;
 
 namespace MyNamespace
