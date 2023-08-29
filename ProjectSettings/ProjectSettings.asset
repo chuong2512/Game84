@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: NiceDreamCompany
-  productName: NiceDreamNew
+  companyName: NhacCu
+  productName: NhacCuCompany
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.Game80NiceDream
+    Android: com.NhacCu.NiceDreamNew
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
@@ -250,8 +250,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: NiceDream.keystore'
-  AndroidKeyaliasName: nice_dream
+  AndroidKeystoreName: '{inproject}: nhaccu.keystore'
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
@@ -274,7 +274,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: f2e7af6bd5f16b84296be44020531405, type: 3}
+      m_Icon: {fileID: 2800000, guid: c213324c56d23b34ea5630b2649b1bc2, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -786,8 +786,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 2D_BuiltInRenderer
-  metroPackageVersion: 
+  metroPackageName: 2DBuiltInRenderer
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -795,7 +795,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: 2D_BuiltInRenderer
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: NiceDreamNew
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
