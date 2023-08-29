@@ -15,10 +15,10 @@ public class IAPKey
     public const string PACK6 = "nd_add250";
 }
 
-public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
+public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
 {
-    private static IStoreController storeController;
-    private static IExtensionProvider extensionProvider;
+    /*private static IStoreController storeController;
+    private static IExtensionProvider extensionProvider;*/
     public static Action OnPurchaseSuccess;
 
     private bool _isBuyFromShop;
@@ -30,10 +30,10 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
 
     private void InitIAP()
     {
-        if (storeController == null)
+        /*if (storeController == null)
         {
             InitProduct();
-        }
+        }*/
     }
 
     private void InitProduct()
@@ -43,7 +43,7 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
             return;
         }
 
-        var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+        /*var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
         builder.AddProduct(IAPKey.PACK1, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK2, ProductType.Consumable);
@@ -51,7 +51,7 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         builder.AddProduct(IAPKey.PACK4, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK5, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK6, ProductType.Consumable);
-        UnityPurchasing.Initialize(this, builder);
+        UnityPurchasing.Initialize(this, builder);*/
     }
 
     public void BuyProductID(string productId)
@@ -89,10 +89,10 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
     private bool IsInitialized()
     {
         // Only say we are initialized if both the Purchasing references are set.
-        return storeController != null && extensionProvider != null;
+        return true;
     }
 
-    public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
+    /*public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
     {
         // Purchasing has succeeded initializing. Collect our Purchasing references.
         Debug.Log("OnInitialized: PASS");
@@ -101,9 +101,9 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         storeController = controller;
         // Store specific subsystem, for accessing device-specific store features.
         extensionProvider = extensions;
-    }
+    }*/
 
-    public void RestorePurchases(System.Action<bool> OnRestored)
+    /*public void RestorePurchases(System.Action<bool> OnRestored)
     {
         // If Purchasing has not yet been set up ...
         if (!IsInitialized())
@@ -132,14 +132,14 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
             Debug.Log("RestorePurchases FAIL. Not supported on this platform. Current = " + Application.platform);
             OnRestored?.Invoke(false);
         }
-    }
+    }*/
 
-    public void OnInitializeFailed(InitializationFailureReason error)
+    /*public void OnInitializeFailed(InitializationFailureReason error)
     {
         Debug.Log("OnInitializeFailed InitializationFailureReason:" + error);
-    }
+    }*/
 
-    public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
+    /*public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
         bool validPurchase = true; // Presume valid for platforms with no R.V.
 
@@ -202,7 +202,7 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         // to be reminded of this purchase at next app launch. Use PurchaseProcessingResult.Pending when still 
         // saving purchased products to the cloud, and when that save is delayed. 
         return PurchaseProcessingResult.Complete;
-    }
+    }*/
 
     private void HandleRestorePurchase(string productId)
     {
@@ -227,14 +227,15 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
 
     public static string GetLocalizePrice(string key, string defaultPriceText)
     {
-        if (storeController != null)
-            return storeController.products.WithID(key).metadata.localizedPriceString;
+        /*if (storeController != null)
+            return storeController.products.WithID(key).metadata.localizedPriceString;*/
         return defaultPriceText;
     }
 
+    /*
     public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
         Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}",
             product.definition.storeSpecificId, failureReason));
-    }
+    }*/
 }
