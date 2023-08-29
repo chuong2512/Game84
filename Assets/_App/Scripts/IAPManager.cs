@@ -59,7 +59,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
 #if UNITY_EDITOR
         OnPurchaseComplete(productId);
 #else
-            // If Purchasing has been initialized ...
+            /*// If Purchasing has been initialized ...
             if (IsInitialized())
             {
                 Product product = storeController.products.WithID(productId);
@@ -80,7 +80,7 @@ public class IAPManager : PersistentSingleton<IAPManager>/*, IStoreListener*/
                 // ... report the fact Purchasing has not succeeded initializing yet. Consider waiting longer or 
                 // retrying initialization.
                 Debug.Log("BuyProductID FAIL. Not initialized.");
-            }
+            }*/
 #endif
     }
 
